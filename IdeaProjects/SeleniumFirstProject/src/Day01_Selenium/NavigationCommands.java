@@ -17,10 +17,22 @@ Close the Browser.
      */
     public static void main(String[] args) {
 
-
+        // Crome driveri uyandirdik
         System.setProperty("webdriver.chrome.driver","Dependencies\\drivers\\chromedriver.exe");
 
         WebDriver driver=new ChromeDriver();
+
+        // Clarusway sitesine gittik
+        driver.navigate().to("https://clarusway.com/");
+        // amazon sitesine gittik
+        driver.navigate().to("https://amazon.com/");
+
+        driver.navigate().back();
+
+        driver.navigate().forward();
+        driver.navigate().refresh();
+        driver.close();
+
 
     }
 
