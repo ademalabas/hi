@@ -30,8 +30,9 @@ public class US_007_1_P {
     public WebElement loginBtn;
 
     //   //span[text()='user avatar']
+    // //button[@id='headlessui-menu-button-8']
 
-    @FindBy(xpath="//span[text()='user avatar']")
+    @FindBy(xpath="//button[@id='headlessui-menu-button-8']")
     public WebElement avatarBtn;
 
     //  //button[text()='Profile']

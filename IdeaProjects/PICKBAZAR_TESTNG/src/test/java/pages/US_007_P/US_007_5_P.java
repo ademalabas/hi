@@ -31,8 +31,9 @@ public class US_007_5_P {
 
 
     //   //span[text()='user avatar']
+    //   //button[@id='headlessui-menu-button-8']
 
-    @FindBy(xpath="//span[text()='user avatar']")
+    @FindBy(xpath="//button[@id='headlessui-menu-button-8']")
     public WebElement avatarBtn;
 
 
@@ -45,8 +46,11 @@ public class US_007_5_P {
 
     //    Confirmation for logout as seeing login page
     //   (//p[text()='Login with your email & password'])[1]
-    @FindBy(xpath="(//p[text()='Login with your email & password'])[1]")
-    public WebElement loginPageMessage;
+
+    // //div[@class='flex w-full items-center lg:w-auto']  Anasayfa
+
+    @FindBy(xpath="//div[@class='flex w-full items-center lg:w-auto']")
+    public WebElement mainPageLogoMessage;
 
 
 

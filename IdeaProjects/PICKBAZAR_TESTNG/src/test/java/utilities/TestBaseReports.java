@@ -40,7 +40,7 @@ public class TestBaseReports {
         extentReports.setSystemInfo("QA Engineer", "Team07");
         extentHtmlReporter.config().setDocumentTitle("Report");
         extentHtmlReporter.config().setReportName("TestNG Reports");
-        extentHtmlReporter.config().setDocumentTitle("Son Test " + new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date()));//test doc uzerinde tarih yazili olacak
+        extentHtmlReporter.config().setDocumentTitle("Son Test02 " + new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date()));//test doc uzerinde tarih yazili olacak
 
     }
 
@@ -53,7 +53,7 @@ public class TestBaseReports {
             extentTest.addScreenCaptureFromPath(screenShotLocation);
             extentTest.fail(result.getThrowable());
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
-            extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
+            extentTest.skip("Test02 Case is skipped: " + result.getName()); // Ignore olanlar
         }
     }
 
