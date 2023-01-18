@@ -13,9 +13,10 @@ public class US_007_2_T extends TestBaseReports {
 
     @Test
     public void us_007_2_T() {
+        extentTest = extentReports.createTest("PickBazarTest", "us_007_2_T() test case");
 
         Driver.getDriver().get(ConfigReader.getProperty("url"));
-        extentTest = extentReports.createTest("PickBazarTest", "");
+        extentTest.info("ConfigReader ile Urly gidildi");
 
         US_007_2_P customer2 = new US_007_2_P();
         extentTest = extentReports.createTest("PickBazarTest", " US_007_2_P  classindan customer4  obhesi olusturuldu");

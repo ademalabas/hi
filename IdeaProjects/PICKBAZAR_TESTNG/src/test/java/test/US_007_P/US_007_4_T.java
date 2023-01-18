@@ -16,7 +16,7 @@ public class US_007_4_T extends TestBaseReports {
         extentTest = extentReports.createTest("PickBazarTest", "us_007_4_T() test case");
         extentTest.info("WishListden urun kaldirinca \"Successfully Removed from Wishlist!\" mesaji gorulmelidir");
         Driver.getDriver().get(ConfigReader.getProperty("url"));
-        extentTest.info("Kullanıcı URL ye gider");
+        extentTest.info("ConfigReader ile Urly gidildi");
 
         US_007_4_P customer4 = new US_007_4_P();
         extentTest.info(" US_007_4_P  classindan customer4  objesi olusturuldu");
@@ -40,9 +40,9 @@ public class US_007_4_T extends TestBaseReports {
         customer4.myWishLIstBtn.click();
         extentTest.info("Wish list butonuna tiklar ve sayfaya gider");
         customer4.ashDoubleBedBtn.click();
-        extentTest.info("Listelenmis urunlerden istemedigi bir urunun remove butonuna tiklar");
+        extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
         customer4.favoriteRemoveBtn.click();
-        extentTest.info("Listelenmis urunlerden istemedigi bir urunun remove butonuna tiklar");
+        extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
 
 
         //Successfully Removed from Wishlist! Yazisini gorur
