@@ -1,8 +1,6 @@
-package test.US_007_P;
+package test.US_007_T;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import pages.US_007_P.US_007_2_P;
 import pages.US_007_P.US_007_3_P;
 import utilities.ConfigReader;
 import utilities.Driver;
