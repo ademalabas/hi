@@ -62,7 +62,9 @@ public class US_007_4_T extends TestBaseReports {
         String actualAlertMessage =customer4.succeesfulAlert.getText();
 
 
+
         String expectedAlertMessage ="Successfully Removed from Wishlist!";
+
 
         Assert.assertEquals(expectedAlertMessage, actualAlertMessage);
         extentTest.pass("Test pssed bey seing same message; Successfully Removed from Wishlist! ");

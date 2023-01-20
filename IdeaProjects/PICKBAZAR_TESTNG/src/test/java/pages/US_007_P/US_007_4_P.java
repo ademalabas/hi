@@ -65,9 +65,11 @@ public class US_007_4_P {
 
 
 
+
     //   (//button[text()='Remove'])[1]
     @FindBy(xpath="(//button[text()='Remove'])[1]")
     public WebElement favoriteRemoveBtn;
+
 
 
     @FindBy(xpath = "//div[@role='alert']")
