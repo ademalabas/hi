@@ -34,7 +34,7 @@ public class US_007_5_T extends TestBaseReports {
 
 
         Assert.assertTrue(customer5.mainPageLogoMessage.isDisplayed());
-       // extentTest.info("Sayfadan Ciktigini Login sayfasina gelme ile dogrular");
+        extentTest.pass("Sayfadan Ciktigini Ana sayfaya gelme ile dogrular");
 
 
 

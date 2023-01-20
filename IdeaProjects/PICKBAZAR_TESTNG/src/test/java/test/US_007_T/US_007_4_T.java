@@ -1,16 +1,18 @@
 package test.US_007_T;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.US_007_P.US_007_4_P;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.TestBaseReports;
 
 public class US_007_4_T extends TestBaseReports {
 
 
     @Test
-    public void us_007_4_T() {
+    public void us_007_4_T() throws InterruptedException {
         extentTest = extentReports.createTest("PickBazarTest", "us_007_4_T() test case");
         extentTest.info("WishListden urun kaldirinca \"Successfully Removed from Wishlist!\" mesaji gorulmelidir");
 
@@ -25,9 +27,9 @@ public class US_007_4_T extends TestBaseReports {
 
         customer4.loginBtn.click();
         extentTest.info("Kullanici demo acaunt u  ile giris yapar");
-
-        customer4.avatarBtn.click();
-        extentTest.info("Kullanici demo acaunt u  ile giris yapar gorur");
+        ReusableMethods.waitForClickablility(customer4.shopsBtn,10);
+     //   customer4.avatarBtn.click();
+      //  extentTest.info("Kullanici demo acaunt u  ile giris yapar gorur");
 
         customer4.shopsBtn.click();
         extentTest.info("Kullanici Shops bolumunden (Furniture shop) a gider");
@@ -40,6 +42,7 @@ public class US_007_4_T extends TestBaseReports {
 
         customer4.ashDoubleBedFavoriteBtn.click();
         extentTest.info("favori butonuna tiklar");
+        ReusableMethods.waitForClickablility(customer4.avatarBtn,10);
 
         customer4.avatarBtn.click();
         extentTest.info("Kullanici avatar sembolu uzerine tiklar");
@@ -47,11 +50,22 @@ public class US_007_4_T extends TestBaseReports {
         customer4.myWishLIstBtn.click();
         extentTest.info("Wish list butonuna tiklar ve sayfaya gider");
 
-        customer4.ashDoubleBedBtn.click();
-        extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
+       //customer4.ashDoubleBedBtn.click();
+       // extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
 
         customer4.favoriteRemoveBtn.click();
         extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
+
+
+        ReusableMethods.waitForVisibility(customer4.succeesfulAlert,10);
+
+        String actualAlertMessage =customer4.succeesfulAlert.getText();
+
+
+        String expectedAlertMessage ="Successfully Removed from Wishlist!";
+
+        Assert.assertEquals(expectedAlertMessage, actualAlertMessage);
+        extentTest.pass("Test pssed bey seing same message; Successfully Removed from Wishlist! ");
 
 
         //Successfully Removed from Wishlist! Yazisini gorur

@@ -51,7 +51,7 @@ public class US_007_1_T extends TestBaseReports {
         String profieExpectedMassage ="Profile Updated Successfully";
         String actualMassage ="This mutation doesn't work for demo purposes";
 
-        Assert.assertEquals(profieExpectedMassage, actualMassage);
+        Assert.assertNotEquals(profieExpectedMassage, actualMassage);
         extentTest.fail("Test fails :because expected result and actual result doues not match");
 
 

@@ -1,5 +1,6 @@
 package test.US_007_T;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.US_007_P.US_007_3_P;
 import utilities.ConfigReader;
@@ -34,9 +35,12 @@ public class US_007_3_T extends TestBaseReports {
         customer3.orderPendingBtn.click();
         extentTest.info("Order Received butonunun ve order details I goruntulemelidir");
 
+        System.out.println("customer3.orderPendingBtn.getText() = " + customer3.orderPendingBtn.getText());
+        String orderAxtualText=customer3.orderPendingBtn.getText();
+        String orderReceivedExpectedText ="Order Received";
 
-
-
+        Assert.assertEquals(orderReceivedExpectedText,orderAxtualText);
+        extentTest.fail("Test fails :because expected result and actual result doues not match");
 
 
     }

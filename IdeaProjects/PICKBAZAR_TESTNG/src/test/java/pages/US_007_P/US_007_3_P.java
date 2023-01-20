@@ -49,10 +49,15 @@ public class US_007_3_P {
 
 
     //   //span[text()='Order Pending']
+    //
+
     @FindBy(xpath="//span[text()='Order Pending']")
     public WebElement orderPendingBtn;
 
+//     (//span[text()='Order Processing'])[11]
 
+    @FindBy(xpath="//span[text()='Order Pending']")
+    public WebElement orderPendingBtn2;
 
 
 

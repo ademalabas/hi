@@ -53,8 +53,9 @@ public class US_007_4_P {
 
     //   //span[text()='user avatar']
     //    //   //button[@id='headlessui-menu-button-8']
+    //   //button[@class='flex items-center focus:outline-none']
 
-    @FindBy(xpath="//button[@id='headlessui-menu-button-8']")
+    @FindBy(xpath="//button[@class='flex items-center focus:outline-none']")
     public WebElement avatarBtn;
 
 
@@ -69,13 +70,11 @@ public class US_007_4_P {
     public WebElement favoriteRemoveBtn;
 
 
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement succeesfulAlert;
 
 
 
-
-    //    Alert Mesaji icin
-    @FindBy(xpath="")
-    public WebElement alertMessage;
 
 
 
