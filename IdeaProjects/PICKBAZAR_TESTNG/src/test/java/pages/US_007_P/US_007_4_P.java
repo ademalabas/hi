@@ -72,9 +72,9 @@ public class US_007_4_P {
 
 
 
+
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement succeesfulAlert;
-
 
 
 

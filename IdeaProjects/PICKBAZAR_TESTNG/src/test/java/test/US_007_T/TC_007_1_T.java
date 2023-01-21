@@ -8,7 +8,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseReports;
 
-public class US_007_1_T extends TestBaseReports {
+public class TC_007_1_T extends TestBaseReports {
 
     @Test
     public void us_007_1_T() {
@@ -51,7 +51,7 @@ public class US_007_1_T extends TestBaseReports {
         String profieExpectedMassage ="Profile Updated Successfully";
         String actualMassage ="This mutation doesn't work for demo purposes";
 
-        Assert.assertNotEquals(profieExpectedMassage, actualMassage);
+        Assert.assertEquals(actualMassage,profieExpectedMassage );
         extentTest.fail("Test fails :because expected result and actual result doues not match");
 
 

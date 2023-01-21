@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseReports;
 
-public class US_007_3_T extends TestBaseReports {
+public class TC_007_3_T extends TestBaseReports {
 
 
     @Test
@@ -39,7 +39,7 @@ public class US_007_3_T extends TestBaseReports {
         String orderAxtualText=customer3.orderPendingBtn.getText();
         String orderReceivedExpectedText ="Order Received";
 
-        Assert.assertEquals(orderReceivedExpectedText,orderAxtualText);
+        Assert.assertEquals(orderAxtualText,orderReceivedExpectedText);
         extentTest.fail("Test fails :because expected result and actual result doues not match");
 
 

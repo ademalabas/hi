@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseReports;
 
-public class US_007_5_T extends TestBaseReports {
+public class TC_007_5_T extends TestBaseReports {
 
 
     @Test

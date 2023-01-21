@@ -8,7 +8,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.TestBaseReports;
 
-public class US_007_2_T extends TestBaseReports {
+public class TC_007_2_T extends TestBaseReports {
 
 
     @Test
@@ -65,7 +65,7 @@ public class US_007_2_T extends TestBaseReports {
         String passChangeExpectedMassage ="Password changed succesfully";
         String actualMassage ="This mutation doesn't work for demo purposes";
 
-        Assert.assertEquals(passChangeExpectedMassage, actualMassage);
+        Assert.assertEquals(actualMassage,passChangeExpectedMassage );
         extentTest.fail("Test fails :because expected result and actual result doues not match");
 
     }

@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseReports;
 
-public class US_007_4_T extends TestBaseReports {
+public class TC_007_4_T extends TestBaseReports {
 
 
     @Test
@@ -56,9 +56,7 @@ public class US_007_4_T extends TestBaseReports {
         customer4.favoriteRemoveBtn.click();
         extentTest.info("Favoriye alinmis urunlerden istemedigi bir urunun remove butonuna tiklar");
 
-
         ReusableMethods.waitForVisibility(customer4.succeesfulAlert,10);
-
         String actualAlertMessage =customer4.succeesfulAlert.getText();
 
 
@@ -66,11 +64,12 @@ public class US_007_4_T extends TestBaseReports {
         String expectedAlertMessage ="Successfully Removed from Wishlist!";
 
 
-        Assert.assertEquals(expectedAlertMessage, actualAlertMessage);
+
+        Assert.assertEquals(actualAlertMessage, expectedAlertMessage );
         extentTest.pass("Test pssed bey seing same message; Successfully Removed from Wishlist! ");
 
 
-        //Successfully Removed from Wishlist! Yazisini gorur
+
 
 
 
