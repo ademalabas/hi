@@ -28,8 +28,7 @@ public class TC_007_4_T extends TestBaseReports {
         customer4.loginBtn.click();
         extentTest.info("Kullanici demo acaunt u  ile giris yapar");
         ReusableMethods.waitForClickablility(customer4.shopsBtn,10);
-     //   customer4.avatarBtn.click();
-      //  extentTest.info("Kullanici demo acaunt u  ile giris yapar gorur");
+
 
         customer4.shopsBtn.click();
         extentTest.info("Kullanici Shops bolumunden (Furniture shop) a gider");
