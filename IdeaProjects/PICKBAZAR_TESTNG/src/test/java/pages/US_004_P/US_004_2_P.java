@@ -15,6 +15,8 @@ public class US_004_2_P {
     public WebElement joinBtn;
 
 
+
+
     //  Demo registration  page
 
     //    //input[@id='email']

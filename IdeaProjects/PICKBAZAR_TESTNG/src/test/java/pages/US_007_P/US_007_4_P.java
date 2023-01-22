@@ -53,16 +53,14 @@ public class US_007_4_P {
 
     //   //span[text()='user avatar']
     //    //   //button[@id='headlessui-menu-button-8']
-    //   //button[@class='flex items-center focus:outline-none']
 
-    @FindBy(xpath="//button[@class='flex items-center focus:outline-none']")
+    @FindBy(xpath="//button[@id='headlessui-menu-button-8']")
     public WebElement avatarBtn;
 
 
     //   //button[text()='My Wishlists']
     @FindBy(xpath="//button[text()='My Wishlists']")
     public WebElement myWishLIstBtn;
-
 
 
 
@@ -73,13 +71,16 @@ public class US_007_4_P {
 
 
 
+
+
+
+    //    Alert Mesaji icin
+    @FindBy(xpath="")
+    public WebElement alertMessage;
+
+
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement succeesfulAlert;
-
-
-
-
-
 
 
 }
