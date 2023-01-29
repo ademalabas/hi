@@ -4,6 +4,7 @@ package test.US_029_T;
 
 
 import org.testng.annotations.Test;
+
 import pages.US_028_29_P.US_028_29_P;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -28,6 +29,7 @@ public class TC_029_1T extends TestBaseReports {
         Thread.sleep(3000);
 
         gp.sepeteEkle.click();
+
         extentTest = extentReports.createTest("Kullanici sepete ekler");
         Thread.sleep(3000);
         gp.sepettenAzalt.click();
