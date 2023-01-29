@@ -23,8 +23,10 @@ public class TC_029_1T extends TestBaseReports {
         US_028_29_P gp = new US_028_29_P();
         //Thread.sleep(1000);
         gp.apples.click();
+
         extentTest = extentReports.createTest("Kullanici elmaya tiklar");
         Thread.sleep(3000);
+
         gp.sepeteEkle.click();
         extentTest = extentReports.createTest("Kullanici sepete ekler");
         Thread.sleep(3000);
