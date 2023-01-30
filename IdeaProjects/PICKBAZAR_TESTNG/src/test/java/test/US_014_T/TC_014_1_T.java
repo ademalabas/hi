@@ -14,9 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TC_014_1_T extends TestBaseReports {
-
     WebDriver driver;
-
     @Test
     public void test01() throws InterruptedException {
         // url ye gidecegiz
