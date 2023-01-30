@@ -15,8 +15,6 @@ import java.util.List;
 
 public class US_09_1_T extends TestBaseReports {
 
-
-
      @Test
      public void grocery() throws InterruptedException {
           extentTest = extentReports.createTest("Grocery Test");
