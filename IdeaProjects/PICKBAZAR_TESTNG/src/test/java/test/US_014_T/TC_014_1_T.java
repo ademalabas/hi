@@ -29,9 +29,7 @@ public class TC_014_1_T extends TestBaseReports {
         page.bagTab.click();
         extentTest = extentReports.createTest("Bags sayfasuna gidildi");
 
-
         List<String> bagsList = new ArrayList<String>();
-
 
         for (WebElement element : page.bags) {
             String str[] = element.getText().toLowerCase().split(" ");
@@ -60,7 +58,6 @@ public class TC_014_1_T extends TestBaseReports {
                 Assert.assertTrue(element.getText().toLowerCase().contains(bagsList.get(i)));
                 extentTest = extentReports.createTest("Aranan kelimenin  bags sayfasındaki üürnler arasında olup olmadığı kontrol edildi");
             }
-
 
 
         }
