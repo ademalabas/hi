@@ -9,12 +9,10 @@ import utilities.TestBaseReports;
 
 public class TC_041_2_T extends TestBaseReports {
 
-
     US_041_2_P pickPage = new US_041_2_P();// objemizi oluşturduk
 
     @Test
     public void test1() throws InterruptedException {
-
 
         // Raporlama için objemizi ekliyoruz
         extentTest = extentReports.createTest("US_041 Number Test");
