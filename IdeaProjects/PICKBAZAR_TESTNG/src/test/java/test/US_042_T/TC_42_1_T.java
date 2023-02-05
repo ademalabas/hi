@@ -15,7 +15,6 @@ public class TC_42_1_T extends TestBaseReports {
     @Test
     public void test1() throws InterruptedException {
 
-
         // Raporlama için objemizi ekliyoruz
         extentTest = extentReports.createTest("US_042 Number Test");
 
@@ -62,7 +61,6 @@ public class TC_42_1_T extends TestBaseReports {
         //Kullanıcı sepet kısmında olduğunu doğrular
         Assert.assertTrue(pickPage.sepetigittButton.isDisplayed());
         extentTest = extentReports.createTest("ürün sepette göründü");
-
 
     }
 }
