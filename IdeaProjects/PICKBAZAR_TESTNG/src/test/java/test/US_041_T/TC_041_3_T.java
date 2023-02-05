@@ -16,7 +16,6 @@ public class TC_041_3_T extends TestBaseReports {
     @Test
     public void test1() throws InterruptedException {
 
-
         // Raporlama için objemizi ekliyoruz
         extentTest = extentReports.createTest("US_041 Number Test");
 
@@ -29,7 +28,6 @@ public class TC_041_3_T extends TestBaseReports {
         String expectedUrl = ConfigReader.getProperty("url");
 
         Assert.assertEquals(expectedUrl, homePageUrl);
-
 
         // join butonuna basılır
         pickPage.joinButton.click();
