@@ -8,12 +8,10 @@ import utilities.Driver;
 import utilities.TestBaseReports;
 
 public class TC_041_1_T extends TestBaseReports {
-
     US_041_1_P pickPage = new US_041_1_P();// objemizi oluşturduk
 
     @Test
     public void test1() throws InterruptedException {
-
 
         // Raporlama için objemizi ekliyoruz
         extentTest = extentReports.createTest("US_041 Number Test");
@@ -27,7 +25,6 @@ public class TC_041_1_T extends TestBaseReports {
         String expectedUrl = ConfigReader.getProperty("url");
 
         Assert.assertEquals(expectedUrl, homePageUrl);
-
 
 
         // join butonuna basılır
